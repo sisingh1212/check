@@ -1,0 +1,14 @@
+import logging
+logger=logging.getLogger()
+logger.setLevel(logging.INFO)
+handler=logging.StreamHandler()
+handler.setFormatter(logging.Formatter('[%(asctime)s][%(levelname)s][%(message)s]'))
+logger.addHandler(handler)
+
+logger.info('Assignment starting ...')
+a='b'
+
+logger.info('Creating a list')
+b=[1,2,3,4]
+
+logger.info('bye')
